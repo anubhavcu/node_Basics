@@ -1,0 +1,6 @@
+in http.js, server is an eventEmitter - it has all the capabilities of the eventEmitter (like server.emit(), server.on());
+
+http.server class inherits from the net.server class and net.server is an eventEmitter.
+(see- "https://nodejs.org/dist/latest-v10.x/docs/api/http.html#http_class_http_server")
+
+every time there is a connection on request, the server raises an event so we use on() method to handle the event .
